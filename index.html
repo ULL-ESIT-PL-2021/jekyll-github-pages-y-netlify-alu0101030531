@@ -1,4 +1,32 @@
 ---
-layout: home
-author_profile: true
+title: "Christian"
+layout: splash
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/main_landscape.jpg
+excerpt: "Fotógrafo profesional canario."
+intro: 
+  - excerpt: 'Lo importantes es ver aquello que resulta invisible para los demás.'
+feature_row:
+  - image_path: assets/images/feature-row-index/ft1.jpg
+    alt: "Colección Enero"
+    title: "Enero"
+    url: "#test-link"
+    btn_label: "Leer más"
+    btn_class: "btn--info"
+  - image_path: assets/images/feature-row-index/ft2.jpg
+    alt: "Colección Febrero"
+    title: "Febrero"
+    url: "#test-link"
+    btn_label: "Leer más"
+    btn_class: "btn--primary"
+  - image_path: assets/images/feature-row-index/ft3.jpg
+    alt: "Colección Marzo"
+    title: "Marzo"
+    url: "#test-link"
+    btn_label: "Leer más"
+    btn_class: "btn--primary"
 ---
+{% include feature_row id="intro" type="center" %}
+{% include feature_row %}

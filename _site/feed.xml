@@ -1,8 +1,139 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-02T10:40:00+00:00</updated><id>/feed.xml</id><title type="html">Coding adventures</title><subtitle>Collection of codes i have made</subtitle><author><name>Christian Pérez Hernández</name></author><entry><title type="html">Banana</title><link href="/banana/" rel="alternate" type="text/html" title="Banana" /><published>2021-03-22T00:00:00+00:00</published><updated>2021-03-22T00:00:00+00:00</updated><id>/banana</id><content type="html" xml:base="/banana/">&lt;p&gt;A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-06T11:34:41+00:00</updated><id>/feed.xml</id><title type="html">Portfolio</title><subtitle>A collection of Raspberry pi projects</subtitle><author><name>Christian Pérez Hernández</name></author><entry><title type="html">Postgre Sql</title><link href="/Postgre-SQL/" rel="alternate" type="text/html" title="Postgre Sql" /><published>2021-03-22T00:00:00+00:00</published><updated>2021-03-22T00:00:00+00:00</updated><id>/Postgre-SQL</id><content type="html" xml:base="/Postgre-SQL/">&lt;p&gt;In this project, we will show you how to set up a PostgreSQL Database on a Raspberry Pi.&lt;/p&gt;
 
-&lt;p&gt;In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://www.postgresql.org&quot;&gt;PostgreSQL&lt;/a&gt; is a free and open-source relational database system that implements the SQL language.&lt;/p&gt;
+
+&lt;p&gt;If you are familiar with MySQL or MariaDB, you will be comfortable using PostgreSQL on your Raspberry Pi.&lt;/p&gt;
+
+&lt;p&gt;The reason for this is that all of these servers make use of SQL to manage their databases.&lt;/p&gt;
+
+&lt;p&gt;There are a few reasons why you may choose to use PostgreSQL over MySQL. One of those being PostgreSQL’s feature set and its compliance with implementing the SQL language.&lt;/p&gt;
+
+&lt;p&gt;The following sections will show you how to install PostgreSQL to your Raspberry Pi and create your very first database and table.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-postgresql-to-the-raspberry-pi&quot;&gt;Setting up PostgreSQL to the Raspberry Pi&lt;/h2&gt;
+&lt;p&gt;Installing PostgreSQL is a simple process thanks to it being available through the Raspberry Pi OS package repository.&lt;/p&gt;
+
+&lt;p&gt;The following steps will get you to install Postgres and configure the software so you can interact with the database using the pi user.&lt;/p&gt;
+&lt;h2 id=&quot;installing-the-postgresql-server&quot;&gt;Installing the PostgreSQL Server&lt;/h2&gt;
+&lt;p&gt;Our first step is to install the PostgreSQL server software to your Raspberry Pi.&lt;/p&gt;
+
+&lt;p&gt;This installation process is fairly straightforward and only takes two steps.&lt;/p&gt;
+
+&lt;h3 id=&quot;we-need-to-start-by-updating-our-raspberry-pis-operating-system&quot;&gt;We need to start by updating our Raspberry Pi’s operating system.&lt;/h3&gt;
+
+&lt;p&gt;Updating ensures we have a fresh base to install the PostgreSQL software to.&lt;/p&gt;
+
+&lt;p&gt;Run the following two commands on your Pi to update the package list and the installed packages.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
+sudo apt full-upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;our-next-step-is-to-install-the-postgresql-package-to-our-raspberry-pi-by-using-the-command-below&quot;&gt;Our next step is to install the PostgreSQL package to our Raspberry Pi by using the command below.&lt;/h3&gt;
+
+&lt;p&gt;Alongside the Postgres server, this command will also install additional bits of software such as the command-line interface.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install postgresql
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;configuring-postgresqls-cli-to-use-the-pi-user&quot;&gt;Configuring PostgreSQL’s CLI to Use the pi User&lt;/h2&gt;
+
+&lt;p&gt;At the moment, if you try to use the PostgreSQL CLI using your Pi user, you will get an error saying you don’t have a role setup for it.&lt;/p&gt;
+
+&lt;p&gt;Don’t worry though, as we can change to the postgres user to create a new role.&lt;/p&gt;
+
+&lt;h3 id=&quot;your-first-step-is-to-change-to-the-postgres-user&quot;&gt;Your first step is to change to the postgres user.&lt;/h3&gt;
+
+&lt;p&gt;You can do this by running the following command on your Raspberry Pi.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo su postgres
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;once-you-have-changed-to-the-postgres-user-we-can-now-create-a-new-role&quot;&gt;Once you have changed to the postgres user, we can now create a new role.&lt;/h3&gt;
+
+&lt;p&gt;Run the command below on your device to begin the process of creating a role for our pi user.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;createuser pi -P --interactive
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;During this process, you will be prompted to answer a few details.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-first-prompt-will-ask-you-to-enter-a-password-for-this-new-role&quot;&gt;The first prompt will ask you to enter a password for this new role.&lt;/h3&gt;
+
+&lt;p&gt;Setting a password adds an extra layer of security when connecting to your Raspberry Pi’s PostgreSQL server.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Enter password for new role:
+Enter it again:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;you-will-now-need-to-decide-if-you-want-this-new-user-to-be-a-superuser&quot;&gt;You will now need to decide if you want this new user to be a superuser.&lt;/h3&gt;
+
+&lt;p&gt;If you want to use the pi user to create databases and other stuff, answer Y to this question.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Shall the new role be a superuser? (y/n) y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;our-next-step-is-to-create-a-database-that-has-the-same-name-as-our-user&quot;&gt;Our next step is to create a database that has the same name as our user.&lt;/h3&gt;
+
+&lt;p&gt;When you try to use the command-line interface, it will automatically try and connect to a database with the same name as your username.&lt;/p&gt;
+
+&lt;p&gt;Load up the command line interface by running the following command.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;psql
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;now-create-a-database-with-the-pi-username-by-typing-in-the-following&quot;&gt;Now, create a database with the pi username by typing in the following.&lt;/h3&gt;
+
+&lt;p&gt;This database is mainly here to make it easier to start using the CLI tool easily.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CREATE DATABASE pi;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;you-can-quit-out-of-the-cli-tool-by-typing-the-following-into-postgresql&quot;&gt;You can quit out of the CLI tool by typing the following into PostgreSQL.&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;exit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;with-the-role-created-for-our-pi-user-we-can-now-change-back-to-it&quot;&gt;With the role created for our pi user, we can now change back to it.&lt;/h3&gt;
+
+&lt;p&gt;To get back to the pi user, all you need to do is enter the command below.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;exit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;creating-your-first-postgresql-database-on-the-raspberry-pi&quot;&gt;Creating your first PostgreSQL Database on the Raspberry Pi&lt;/h2&gt;
+&lt;p&gt;To test that PostgreSQL is now up and running on our Raspberry Pi, we will now create a new database on it.&lt;/p&gt;
+
+&lt;p&gt;These steps will show you how to use the Postgres CLI to create a database and add a table to it.&lt;/p&gt;
+
+&lt;h3 id=&quot;let-us-start-this-process-by-loading-into-the-postgres-cli&quot;&gt;Let us start this process by loading into the Postgres CLI.&lt;/h3&gt;
+
+&lt;p&gt;Run the following command to switch into the command line interface.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;psql
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;within-the-postgresql-command-line-we-can-now-create-and-manipulate-databases&quot;&gt;Within the PostgreSQL command line, we can now create and manipulate databases.&lt;/h3&gt;
+
+&lt;p&gt;As we mentioned earlier, Postgres uses the SQL programming language. If you have ever used SQL before, you will feel right out home.&lt;/p&gt;
+
+&lt;p&gt;For our first task, let us create a new database on our Raspberry Pi. For this example, we will call this database “exampledb“.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CREATE DATABASE exampledb;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;next-you-will-need-to-change-to-this-new-database&quot;&gt;Next, you will need to change to this new database.&lt;/h3&gt;
+
+&lt;p&gt;By default, when you launch the Postgres CLI, you will interact with the database with the same name as your user.&lt;/p&gt;
+
+&lt;p&gt;To change to our new DB, we need to use the “\connect” command followed by our DB’s name.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\connect exampledb;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Once the CLI has connected to your new database, you should get a message as we have below.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;You are now connected to database &quot;exampledb&quot; as user &quot;pi&quot;.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;our-next-step-to-show-postgresql-is-running-on-the-raspberry-pi-is-to-create-a-table-within-our-database&quot;&gt;Our next step to show PostgreSQL is running on the Raspberry Pi is to create a table within our database.&lt;/h3&gt;
+
+&lt;p&gt;We are going to make this a simple table called “authors” that has two columns. One column will be called “name“, and the other will be called “website“.&lt;/p&gt;
+
+&lt;p&gt;We will set the data type for both of these columns to “text“.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CREATE TABLE authors (name text, website text);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;let-us-now-add-a-row-of-data-to-this-brand-new-table&quot;&gt;Let us now add a row of data to this brand new table.&lt;/h3&gt;
+
+&lt;p&gt;Having support for SQL makes adding this data a simple process. For our row, we will add an author with the name “Emmet” and the website “pimylifeup.com”&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;INSERT INTO authors VALUES ('Emmet', 'pimylifeup.com');
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;finally-our-last-task-is-to-get-postgresql-to-output-the-data-stored-in-this-table&quot;&gt;Finally, our last task is to get PostgreSQL to output the data stored in this table.&lt;/h3&gt;
+
+&lt;p&gt;To do this, we can use the following simple select statement.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM authors
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;From this command, you should see all of the data that is stored within the specified table.&lt;/p&gt;
+
+&lt;p&gt;As we have only added a single row to this table, that is all you should see outputted into the command line.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; name  |    website
+-------+----------------
+ Emmet | pimylifeup.com
+(1 row)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Christian</name></author><summary type="html">In this project, we will show you how to set up a PostgreSQL Database on a Raspberry Pi.</summary></entry></feed>
