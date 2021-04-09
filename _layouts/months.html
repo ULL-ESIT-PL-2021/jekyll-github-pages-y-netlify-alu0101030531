@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<h2>Collección de fotos de Enero</h2>
+<ul>
+  {% assign filtered_posts = site.posts | where: 'month', page.month %}
+  {% for post in filtered_posts %}
+    <li>
+        <img src="{{ post.related_image }}" alt="" width="50px" height="50px">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<script src="https://utteranc.es/client.js"
+        repo="ULL-ESIT-PL-2021 / jekyll-github-pages-y-netlify-alu0101030531"
+        issue-term="title"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>

@@ -1,15 +1,14 @@
 ---
-layout: splash
+layout: archive
 title: Blog
+month: january
 ---
 <h1>Latest Posts</h1>
-{% comment %}
 <ul>
-  {% for post in site.easy %}
+  {% for post in site.posts %}
     <li>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       {{ post.excerpt }}
     </li>
   {% endfor %}
 </ul>
-{% endcomment %}

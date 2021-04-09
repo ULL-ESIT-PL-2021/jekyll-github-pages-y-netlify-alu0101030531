@@ -20,7 +20,7 @@ title                    : "Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Christian P Hdez"
-description              : "A collection of Raspberry pi projects"
+description              : "Photography Portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -94,10 +94,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Christian Pérez Hernández"
-  avatar           : "/assets/images/bio.jfif"
-  bio              : "Computer engineer"
-  location         : "Inside the computer"
+  name             : "Justin Welsh"
+  avatar           : "/assets/images/profile.jpeg"
+  bio              : "Fotógrafo profesional"
+  location         : "La Laguna, Tenerife"
   email            :
   links:
     - label: "Email"
@@ -282,6 +282,17 @@ defaults:
       related: true
       toc: true
       toc_label: table of contents
+  # meses
+  - scope:
+      path: ""
+      type: months
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      comments: true
 
 collections:
-  easy:
+  months:
+    output: true
+    permalink: /:collection/:path/

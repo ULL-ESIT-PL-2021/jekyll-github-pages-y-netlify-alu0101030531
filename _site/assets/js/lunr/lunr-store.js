@@ -1,13 +1,31 @@
 var store = [{
-        "title": "Postgre Sql",
-        "excerpt":"In this project, we will show you how to set up a PostgreSQL Database on a Raspberry Pi. PostgreSQL is a free and open-source relational database system that implements the SQL language. If you are familiar with MySQL or MariaDB, you will be comfortable using PostgreSQL on your Raspberry Pi....","categories": [],
+        "title": "February",
+        "excerpt":"Fotos de febrero  ","categories": [],
         "tags": [],
-        "url": "/easy/2021-03-22-Postgre-SQL/",
+        "url": "/months/february/",
         "teaser": null
       },{
-        "title": "Postgre Sql",
-        "excerpt":"In this project, we will show you how to set up a PostgreSQL Database on a Raspberry Pi. PostgreSQL is a free and open-source relational database system that implements the SQL language. If you are familiar with MySQL or MariaDB, you will be comfortable using PostgreSQL on your Raspberry Pi....","categories": [],
+        "title": "January",
+        "excerpt":"Fotos de enero  ","categories": [],
         "tags": [],
-        "url": "/Postgre-SQL/",
+        "url": "/months/january/",
+        "teaser": null
+      },{
+        "title": "March",
+        "excerpt":"Fotos de marzo  ","categories": [],
+        "tags": [],
+        "url": "/months/march/",
+        "teaser": null
+      },{
+        "title": "Amce City",
+        "excerpt":"                                                  La ciudad de Amce City.      ","categories": [],
+        "tags": [],
+        "url": "/Amce-City/",
+        "teaser": "/assets/images/feature-row-index/ft2.jpg"
+      },{
+        "title": "Rahbor city",
+        "excerpt":"                                                  La ciudad de Rahbor.      ","categories": [],
+        "tags": [],
+        "url": "/Rahbor/",
         "teaser": null
       }]

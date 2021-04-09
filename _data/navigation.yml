@@ -4,5 +4,5 @@ main:
     url: /about
   - title: "Posts"
     url: /blog
-  - title: "Easy Projects"
-    url: /easy
+  - title: "Galería"
+    url: /months
