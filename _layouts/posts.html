@@ -1,0 +1,38 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h3>Similar posts</h3>
+<hr>
+
+{% assign posts = '' | split: '' %}
+  {% for tag in site.tags %}
+    {% for page_tag in page.tags %}
+      {% if tag[0] == page_tag %}
+          {% for post in tag[1] %}
+            {% unless posts contains post %}
+              {%assign posts = posts | push: post %}
+            {% endunless %}
+          {% endfor %}
+      {% endif %}
+    {% endfor %}    
+  {% endfor %}
+
+<ul>
+  {% for post in posts %}
+    <li>
+      <img src="{{ post.related_image }}" alt="" width="50px" height="50px">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<script src="https://utteranc.es/client.js"
+        repo="ULL-ESIT-PL-2021/jekyll-github-pages-y-netlify-alu0101030531"
+        issue-term="title"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>

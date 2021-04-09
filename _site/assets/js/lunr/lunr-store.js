@@ -19,13 +19,25 @@ var store = [{
       },{
         "title": "Amce City",
         "excerpt":"                                                  La ciudad de Amce City.      ","categories": [],
-        "tags": [],
+        "tags": ["europe","landscape"],
         "url": "/Amce-City/",
         "teaser": "/assets/images/feature-row-index/ft2.jpg"
       },{
         "title": "Rahbor city",
         "excerpt":"                                                  La ciudad de Rahbor.      ","categories": [],
-        "tags": [],
+        "tags": ["america"],
         "url": "/Rahbor/",
+        "teaser": null
+      },{
+        "title": "Ruyamur",
+        "excerpt":"                                                  La ciudad de Ruyamur.      ","categories": [],
+        "tags": ["america"],
+        "url": "/Ruyamur/",
+        "teaser": null
+      },{
+        "title": "Ruyamur",
+        "excerpt":"                                                  La ciudad de Kaka.      ","categories": [],
+        "tags": ["landscape"],
+        "url": "/kaka/",
         "teaser": null
       }]
