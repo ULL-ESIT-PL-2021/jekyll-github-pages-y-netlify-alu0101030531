@@ -21,9 +21,9 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Christian P Hdez"
 description              : "Photography Portfolio"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://ull-esit-pl-2021.github.io/jekyll-github-pages-y-netlify-alu0101030531/
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : ULL-ESIT-PL-2021/jekyll-github-pages-y-netlify-alu0101030531
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : #
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -274,6 +274,7 @@ defaults:
       path: ""
       type: posts
     values:
+      permalink: /:path/
       layout: single
       author_profile: true
       read_time: true
