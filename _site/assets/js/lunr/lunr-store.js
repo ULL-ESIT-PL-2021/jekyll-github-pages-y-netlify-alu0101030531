@@ -18,25 +18,25 @@ var store = [{
         "teaser": null
       },{
         "title": "Amce City",
-        "excerpt":"                                                  La ciudad de Amce City.      ","categories": [],
+        "excerpt":"                                               ","categories": [],
         "tags": ["europe","landscape"],
         "url": "/Amce-City/",
-        "teaser": "/assets/images/feature-row-index/ft2.jpg"
+        "teaser": null
       },{
         "title": "Rahbor city",
-        "excerpt":"                                                  La ciudad de Rahbor.      ","categories": [],
+        "excerpt":"                                               ","categories": [],
         "tags": ["america"],
         "url": "/Rahbor/",
         "teaser": null
       },{
         "title": "Ruyamur",
-        "excerpt":"                                                  La ciudad de Ruyamur.      ","categories": [],
+        "excerpt":"                                               ","categories": [],
         "tags": ["america"],
         "url": "/Ruyamur/",
         "teaser": null
       },{
-        "title": "Ruyamur",
-        "excerpt":"                                                  La ciudad de Kaka.      ","categories": [],
+        "title": "Kaká",
+        "excerpt":"                                               ","categories": [],
         "tags": ["landscape"],
         "url": "/kaka/",
         "teaser": null
