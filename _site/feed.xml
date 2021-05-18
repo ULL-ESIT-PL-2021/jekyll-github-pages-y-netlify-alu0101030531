@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-12T12:47:39+00:00</updated><id>/feed.xml</id><title type="html">Portfolio</title><subtitle>Photography Portfolio</subtitle><author><name>Justin Welsh</name></author><entry><title type="html">Amce City</title><link href="/Amce-City/" rel="alternate" type="text/html" title="Amce City" /><published>2021-04-09T00:00:00+00:00</published><updated>2021-04-09T00:00:00+00:00</updated><id>/Amce-City</id><content type="html" xml:base="/Amce-City/">&lt;figure class=&quot; &quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-05-18T09:36:35+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>Photography Portfolio</subtitle><author><name>Justin Welsh</name></author><entry><title type="html">Amce City</title><link href="http://localhost:4000/2021-04-09-Amce-City/" rel="alternate" type="text/html" title="Amce City" /><published>2021-04-09T00:00:00+00:00</published><updated>2021-04-09T00:00:00+00:00</updated><id>http://localhost:4000/Amce-City</id><content type="html" xml:base="http://localhost:4000/2021-04-09-Amce-City/">&lt;figure class=&quot; &quot;&gt;
   
     
       &lt;a href=&quot;/assets/images/feature-row-index/ft2.jpg&quot;&gt;
@@ -7,7 +7,7 @@
     
   
   
-&lt;/figure&gt;</content><author><name>Justin Welsh</name></author><category term="europe" /><category term="landscape" /><summary type="html">Amce City</summary></entry><entry><title type="html">Rahbor city</title><link href="/Rahbor/" rel="alternate" type="text/html" title="Rahbor city" /><published>2021-04-09T00:00:00+00:00</published><updated>2021-04-09T00:00:00+00:00</updated><id>/Rahbor</id><content type="html" xml:base="/Rahbor/">&lt;figure class=&quot; &quot;&gt;
+&lt;/figure&gt;</content><author><name>Justin Welsh</name></author><category term="europe" /><category term="landscape" /><summary type="html">Amce City</summary></entry><entry><title type="html">Rahbor city</title><link href="http://localhost:4000/2021-04-09-Rahbor/" rel="alternate" type="text/html" title="Rahbor city" /><published>2021-04-09T00:00:00+00:00</published><updated>2021-04-09T00:00:00+00:00</updated><id>http://localhost:4000/Rahbor</id><content type="html" xml:base="http://localhost:4000/2021-04-09-Rahbor/">&lt;figure class=&quot; &quot;&gt;
   
     
       &lt;a href=&quot;/assets/images/feature-row-index/ft1.jpg&quot;&gt;
@@ -16,7 +16,7 @@
     
   
   
-&lt;/figure&gt;</content><author><name>Justin Welsh</name></author><category term="america" /><summary type="html">Rahbor city</summary></entry><entry><title type="html">Ruyamur</title><link href="/Ruyamur/" rel="alternate" type="text/html" title="Ruyamur" /><published>2021-04-09T00:00:00+00:00</published><updated>2021-04-09T00:00:00+00:00</updated><id>/Ruyamur</id><content type="html" xml:base="/Ruyamur/">&lt;figure class=&quot; &quot;&gt;
+&lt;/figure&gt;</content><author><name>Justin Welsh</name></author><category term="america" /><summary type="html">Rahbor city</summary></entry><entry><title type="html">Ruyamur</title><link href="http://localhost:4000/2021-04-09-Ruyamur/" rel="alternate" type="text/html" title="Ruyamur" /><published>2021-04-09T00:00:00+00:00</published><updated>2021-04-09T00:00:00+00:00</updated><id>http://localhost:4000/Ruyamur</id><content type="html" xml:base="http://localhost:4000/2021-04-09-Ruyamur/">&lt;figure class=&quot; &quot;&gt;
   
     
       &lt;a href=&quot;/assets/images/feature-row-index/ft3.jpg&quot;&gt;
@@ -25,7 +25,7 @@
     
   
   
-&lt;/figure&gt;</content><author><name>Justin Welsh</name></author><category term="america" /><summary type="html">Ruyamur</summary></entry><entry><title type="html">Kaká</title><link href="/kaka/" rel="alternate" type="text/html" title="Kaká" /><published>2021-04-09T00:00:00+00:00</published><updated>2021-04-09T00:00:00+00:00</updated><id>/kaka</id><content type="html" xml:base="/kaka/">&lt;figure class=&quot; &quot;&gt;
+&lt;/figure&gt;</content><author><name>Justin Welsh</name></author><category term="america" /><summary type="html">Ruyamur</summary></entry><entry><title type="html">Kaká</title><link href="http://localhost:4000/2021-04-09-kaka/" rel="alternate" type="text/html" title="Kaká" /><published>2021-04-09T00:00:00+00:00</published><updated>2021-04-09T00:00:00+00:00</updated><id>http://localhost:4000/kaka</id><content type="html" xml:base="http://localhost:4000/2021-04-09-kaka/">&lt;figure class=&quot; &quot;&gt;
   
     
       &lt;a href=&quot;/assets/images/feature-row-index/ft4.jpg&quot;&gt;

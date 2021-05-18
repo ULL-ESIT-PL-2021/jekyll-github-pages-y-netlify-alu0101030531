@@ -20,24 +20,24 @@ var store = [{
         "title": "Amce City",
         "excerpt":"                                               ","categories": [],
         "tags": ["europe","landscape"],
-        "url": "/Amce-City/",
+        "url": "/2021-04-09-Amce-City/",
         "teaser": null
       },{
         "title": "Rahbor city",
         "excerpt":"                                               ","categories": [],
         "tags": ["america"],
-        "url": "/Rahbor/",
+        "url": "/2021-04-09-Rahbor/",
         "teaser": null
       },{
         "title": "Ruyamur",
         "excerpt":"                                               ","categories": [],
         "tags": ["america"],
-        "url": "/Ruyamur/",
+        "url": "/2021-04-09-Ruyamur/",
         "teaser": null
       },{
         "title": "Kaká",
         "excerpt":"                                               ","categories": [],
         "tags": ["landscape"],
-        "url": "/kaka/",
+        "url": "/2021-04-09-kaka/",
         "teaser": null
       }]
