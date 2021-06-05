@@ -21,8 +21,8 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Christian P Hdez"
 description              : "Photography Portfolio"
-url                      : #
-baseurl                  : jekyll-github-pages-y-netlify-alu0101030531/
+url                      : https://ull-esit-pl-2021.github.io
+baseurl                  : /jekyll-github-pages-y-netlify-alu0101030531
 repository               : ULL-ESIT-PL-2021/jekyll-github-pages-y-netlify-alu0101030531
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : #
