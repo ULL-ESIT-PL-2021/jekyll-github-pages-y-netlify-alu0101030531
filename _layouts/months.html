@@ -9,7 +9,7 @@ layout: default
   {% assign filtered_posts = site.posts | where: 'month', page.month %}
   {% for post in filtered_posts %}
     <li>
-        <img src="{{ post.related_image }}" alt="{{ post.title }}" width="50px" height="50px">
+        <img src="{{ post.related_image | prepend:site.baseurl }}" alt="{{ post.title }}" width="50px" height="50px">
         <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
     </li>
   {% endfor %}
